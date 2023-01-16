@@ -1,0 +1,4 @@
+<section class="container-flued section-paddin text-yellow">
+  <app-title [title]="title"></app-title>
+  <app-info-list-mini *ngFor="let technology of technologies" [technology]="technology[0]" [level]="technology[1]"></app-info-list-mini>
+</section>

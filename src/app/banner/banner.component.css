@@ -1,0 +1,45 @@
+.parallax {
+    /* The image used */
+    --opacidad-negro: 0.7;
+    
+    background-image: linear-gradient(rgba(244, 223, 110, var(--opacidad-negro)), rgba(244, 223, 110, var(--opacidad-negro))), url("https://miro.medium.com/max/720/0*EOfRfHeaCFASkcy6.webp");
+    /*
+    background-image: linear-gradient(rgba(10, 10, 10, var(--opacidad-negro)), rgba(10, 10, 10, var(--opacidad-negro))), url("../img/portada.jpg");
+    */
+    /*background-image: url("../img/portada.jpg");*/
+
+    /* Set a specific height */
+    min-height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover
+}
+
+.portada{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media only screen and (max-device-width: 1023px) {
+
+    .parallax {
+        /* The image used */
+        --opacidad-negro: 0.8;
+        background-image: linear-gradient(rgba(244, 223, 110, var(--opacidad-negro)), rgba(244, 223, 110, var(--opacidad-negro))), url("https://miro.medium.com/max/720/0*EOfRfHeaCFASkcy6.webp");
+        /*background-image: url("../img/portada.jpg");*/
+    
+        /* Set a specific height */
+        min-height: 100vh;
+        /* Set a specific height */
+        min-height: 100vh;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
