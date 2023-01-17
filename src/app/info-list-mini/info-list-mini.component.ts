@@ -7,8 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class InfoListMiniComponent implements OnInit {
 
-  @Input() technology: string = "none";
-  @Input() level: number = 10; 
+  @Input() name: string = "none";
+  @Input() level: number = 10;
+  @Input() imageUrl:string = "none";  
 
   constructor() { }
 

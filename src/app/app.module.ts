@@ -9,6 +9,7 @@ import { InfoListComponent } from './info-list/info-list.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { InfoListMiniComponent } from './info-list-mini/info-list-mini.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [									
@@ -22,7 +23,8 @@ import { InfoListMiniComponent } from './info-list-mini/info-list-mini.component
       InfoListMiniComponent
    ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

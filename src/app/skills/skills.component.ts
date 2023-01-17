@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RestService } from '../rest.service';
 
 @Component({
   selector: 'app-skills',
@@ -7,12 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private RestService:RestService) { }
 
   ngOnInit() {
+    this.loadData();
+  }
+
+  public loadData(){
+    this.RestService.get("/skill")
+    .subscribe(res =>{
+      console.log(res)
+      this.technologies = res;
+    });
   }
 
   title:string = "Specials Skills";
-  technologies : Array<[string, number]> = [["Java",100],["Linux",90],["MySQL",60],["Git",60]]
+  technologies:any=[];
 
 }
