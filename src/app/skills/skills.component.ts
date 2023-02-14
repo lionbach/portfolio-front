@@ -24,5 +24,4 @@ export class SkillsComponent implements OnInit {
 
   title:string = "Specials Skills";
   technologies:any=[];
-
 }
